@@ -367,16 +367,19 @@ color: #2196F3;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .field:focus-within > .form-icon, .field:hover > .form-icon {
+  .field:focus-within > .form-icon {
     fill: var(--accent-color);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .form-input:focus, .form-input:hover {
+  .form-input:focus {
     border-color: var(--accent-color);
-    cursor: pointer;
     outline: 1px var(--accent-color);
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .form-input:hover {
+    cursor: pointer;
   }
 
 .form-textarea {
@@ -392,11 +395,13 @@ color: #2196F3;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-textarea:hover, .form-textarea:focus {
+.form-textarea:focus {
     border-color: var(--accent-color);
-    cursor: pointer;
     outline: 1px var(--accent-color) ;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .form-textarea:hover {
+    cursor: pointer;
   }
 
 .form-list-item {

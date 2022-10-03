@@ -269,7 +269,27 @@
                     </li>
                 </ul>
             </div>
+            <form class="futer-form">
+                <p class="form-footer-text">Підпишіться на розсилку</p>       
+                <lable class="futer-form-lable">
+                    <input type="email" class="futer-form-input" name="mail" required
+                    pattern="[a-z]{1-15}" 
+                    title="email@example.com"
+                    placeholder="E-mail"
+                    pattern="" 
+                    title=""/>
+                     <button class="form-btn footer-form-btn">                       
+                        Підписатися
+                        <span class="futer-form-icon">
+                            <svg class="icon icon-telegram" width='24' height='24'>
+                                <use href="./images/symbol-defs.svg#icon-icon-send"></use>
+                            </svg>
+                        </span>
+                     </button>                   
+                </lable>
+            </form>
         </div>
     </footer>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
